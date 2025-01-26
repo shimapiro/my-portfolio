@@ -1,0 +1,53 @@
+.home-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.home-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.home-container p {
+  font-size: 18px;
+  color: #555;
+}
+
+.about-site {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.about-site h2 {
+  font-size: 28px;
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+.about-site p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-site ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.about-site ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.about-site strong {
+  color: #4CAF50;
+}
