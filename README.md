@@ -1,5 +1,5 @@
 # My Portfolio
-このプロジェクトは、ReactとTypeScriptを使用して作成されたポートフォリオサイトです。
+このプロジェクトは、ReactとTypeScriptを使用して作成されたポートフォリオサイトの作成途中です。
 
 ## 使用技術
 - React
