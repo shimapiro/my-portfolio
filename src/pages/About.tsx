@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <div className="about-container">
       <h1>自己紹介</h1>
-      <p>こんにちは、私は島田寛幸です。<br /> 現在、フロントエンドエンジニアとして活躍中です。</p>
+      <p>こんにちは、私はshimapiroです。<br /> 現在、フロントエンドエンジニアとして活躍中です。</p>
       
       <h2>スキルセット</h2>
       <ul className="skills-list">

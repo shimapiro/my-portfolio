@@ -1,37 +1,66 @@
 import React, { useState } from 'react';
 
 const Contact: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert(`２営業日以内にご返信いたします ${email}`);
+    setStatus('送信中...');
+
+    const response = await fetch('http://localhost:5000/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      setStatus('メッセージが送信されました！');
+      setFormData({ name: '', email: '', message: '' });
+    } else {
+      setStatus('送信に失敗しました。もう一度お試しください。');
+    }
   };
 
   return (
-    <div style={{ padding: '50px' }}>
-      <h1>Contact Me</h1>
+    <div>
+      <h1>お問い合わせ</h1>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>メッセージ:</label>
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Send</button>
+        <input
+          type="text"
+          name="name"
+          placeholder="名前"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="メールアドレス"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="メッセージ"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">送信</button>
       </form>
+      <p>{status}</p>
     </div>
   );
 };
