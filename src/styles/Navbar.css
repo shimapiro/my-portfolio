@@ -1,17 +1,18 @@
-nav {
-  padding: 10px;
-  background-color: #333;
-  color: white;
+.navbar {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 15px;
 }
 
-nav a {
+.navbar a {
   color: white;
   text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
 }
 
-nav a:hover {
-  color: #4CAF50;
+.navbar img {
+  height: 40px;
 }
