@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// stylesフォルダ内のNavbar.cssを正しくインポート
 import '../styles/Navbar.css';
 
 const Navbar: React.FC = () => {
   return (
-    <nav>
+    <nav className="navbar">
       <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
       <Link to="/projects">Projects</Link>
-      <Link to="/skills">Skills</Link>
       <Link to="/contact">Contact</Link>
     </nav>
   );
