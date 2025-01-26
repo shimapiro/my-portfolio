@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// stylesフォルダ内のNavbar.cssを正しくインポート
 import '../styles/Navbar.css';
 
 const Navbar: React.FC = () => {
