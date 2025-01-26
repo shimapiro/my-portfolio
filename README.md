@@ -1,15 +1,111 @@
-# My Portfolio
-このプロジェクトは、ReactとTypeScriptを使用して作成されたポートフォリオサイトの作成途中です。
+# ポートフォリオサイト
 
-## 使用技術
-- React
-- TypeScript
-- Vite
-- CSS Modules
 
-## インストール方法
-```bash
-git clone https://github.com/shimapiro/my-portfolio.git
-cd my-portfolio
-npm install
-npm run dev
+## はじめに
+本リポジトリは、ポートフォリオサイトに関するものです。
+このサイトでは、これまでのプロジェクトやスキルを紹介しています。
+
+
+## コンセプト
+シンプルで分かりやすいデザインにしました。
+自分のスキルや経験を整理し、今後も追加していきやすい設計にしていきます。
+問い合わせフォームを設置し、コミュニケーションを可能にします。
+
+
+## アプリ概要
+このポートフォリオサイトでは、以下の内容を提供しています：
+ - **ホーム:** 自己紹介とサイトの概要
+ - **プロジェクト:** 過去に取り組んだプロジェクトの紹介
+ - **スキル:** 保有する技術スキルの紹介
+ - **お問い合わせ:** フォームを通じてのコンタクト
+
+---
+
+## デモサイト
+[ポートフォリオを見る](https://my-portfolio-lake-six-28.vercel.app/)
+
+---
+
+## 環境
+**フロントエンド:** React, TypeScript, Vite
+**バックエンド:** Vercelサーバーレス関数（Node.js）
+**スタイリング:** CSS Modules
+**ホスティング:** Vercel
+**動作確認済みOS:** Windows, macOS
+
+---
+
+## セットアップ手順
+
+**リポジトリのクローン**
+   ```bash
+   git clone https://github.com/shimapiro/my-portfolio.git
+   cd my-portfolio
+   ```
+
+**依存関係のインストール**
+   ```bash
+   npm install
+   ```
+
+**環境変数の設定**
+   プロジェクトのルートに `.env` ファイルを作成し、以下を記述してください：
+
+   ```env
+   EMAIL_USER=your-email@gmail.com
+   EMAIL_PASS=your-app-password
+   ```
+
+**ローカルサーバーの起動**
+   ```bash
+   npm run dev
+   ```
+
+
+---
+
+## 利用方法
+
+**ホーム:** 自己紹介を確認
+**プロジェクト:** 過去の制作物を閲覧
+**スキル:** 保有スキルをチェック
+**お問い合わせ:** メールフォームでメッセージ送信
+
+---
+
+## デプロイ方法（Vercel）
+
+Vercel CLI をインストール:
+   ```bash
+   npm install -g vercel
+   ```
+
+Vercelにログイン:
+   ```bash
+   vercel login
+   ```
+
+デプロイ実行:
+   ```bash
+   vercel --prod
+   ```
+
+---
+
+
+
+## 今後の予定
+
+サイトデザインの改良（レスポンシブ対応強化）
+さらに詳細なプロジェクト紹介ページの追加
+ブログ機能追加
+
+---
+
+## おわりに
+
+このポートフォリオは、ReactとTypeScriptを使用して制作しました。  
+ご覧いただきありがとうございます。  
+
+---
+```
