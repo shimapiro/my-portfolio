@@ -1,4 +1,3 @@
-/* 全体のコンテナ配置 */
 .contact-container {
   max-width: 500px;
   margin: 50px auto;
@@ -9,14 +8,6 @@
   text-align: center;
 }
 
-/* タイトルスタイル */
-.contact-container h1 {
-  color: #333;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-/* 入力フォーム全体のスタイル */
 .form-group {
   margin-bottom: 20px;
   text-align: left;
@@ -29,7 +20,6 @@ label {
   color: #555;
 }
 
-/* 入力フィールドのスタイル */
 input, textarea {
   width: 100%;
   padding: 12px;
@@ -39,12 +29,6 @@ input, textarea {
   outline: none;
 }
 
-textarea {
-  height: 120px;
-  resize: none;
-}
-
-/* フォーム送信ボタン */
 button {
   background-color: #4CAF50;
   color: white;
@@ -53,21 +37,14 @@ button {
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
-  transition: background 0.3s ease;
-  width: 100%;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
-/* ステータスメッセージ */
 .status-message {
   font-size: 16px;
   margin-top: 20px;
   color: #333;
-}
-
-.status-message:empty {
-  display: none;
 }

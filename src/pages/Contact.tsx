@@ -18,17 +18,17 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setStatus('送信中...');
 
-    const response = await fetch('http://localhost:5000/send', {
+    const response = await fetch('/api/sendMail', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData)
+      body: JSON.stringify(formData),
     });
 
     if (response.ok) {
       setStatus('メッセージが送信されました！');
       setFormData({ name: '', email: '', message: '' });
     } else {
-      setStatus('送信に失敗しました。もう一度試してください。');
+      setStatus('送信に失敗しました。');
     }
   };
 
