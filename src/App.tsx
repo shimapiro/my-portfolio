@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Navbar from './components/Navbar';  // componentsからNavbarをインポート
+import About from './pages/About';  // pagesフォルダ内のAboutページをインポート
 import Projects from './pages/Projects';
-import Skills from './pages/Skills';
 import Contact from './pages/Contact';
+import Home from './pages/Home';
 
 const App: React.FC = () => {
   return (
@@ -12,10 +12,10 @@ const App: React.FC = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<h1>404 - ページはありません</h1>} />
+        <Route path="*" element={<h1>404 - ページが見つかりません</h1>} />
       </Routes>
     </Router>
   );
