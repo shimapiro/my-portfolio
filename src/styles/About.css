@@ -1,14 +1,27 @@
 .about-container {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 50px auto;
   padding: 20px;
-  text-align: center;
-  background-color: #f4f4f4;
+  background-color: #fff;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.about-container h1{
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
 
 .about-container h1, h2 {
   color: #333;
+}
+
+.about-container p {
+  font-size: 16px;
+
 }
 
 .about-container ul {
@@ -17,21 +30,38 @@
 }
 
 .about-container li {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
+
+
+.skills-list ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.skills-list ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.skills-list strong {
+  color: #4CAF50;
+}
+
 
 
 @media (max-width: 768px) {
   .about-container {
     padding: 10px;
   }
-  
+
   .skills-list li {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .years {
     margin-top: 5px;
   }

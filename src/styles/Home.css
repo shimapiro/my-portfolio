@@ -15,7 +15,7 @@
 }
 
 .home-container p {
-  font-size: 18px;
+  font-size: 16px;
   color: #555;
 }
 
@@ -25,9 +25,8 @@
 }
 
 .about-site h2 {
-  font-size: 28px;
-  color: #4CAF50;
-  border-bottom: 2px solid #4CAF50;
+  font-size: 1.5rem;
+  /* border-bottom: 2px solid #4CAF50; */
   padding-bottom: 5px;
 }
 

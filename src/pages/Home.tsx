@@ -4,8 +4,7 @@ import '../styles/Home.css';
 const Home: React.FC = () => {
   return (
     <div className="home-container">
-      <h1>shimapiro</h1>
-      <p>ポートフォリオ</p>
+      <h1>ポートフォリオ</h1>
 
       <section className="about-site">
         <h2>このサイトについて</h2>
@@ -18,7 +17,7 @@ const Home: React.FC = () => {
           <li><strong>バックエンド:</strong> Vercel, Nodemailer</li>
           <li><strong>スタイリング:</strong> CSS Modules</li>
         </ul>
-        <h3>機能一覧</h3>
+        <h2>機能一覧</h2>
         <ul>
           <li>プロジェクト紹介</li>
           <li>スキル紹介</li>
