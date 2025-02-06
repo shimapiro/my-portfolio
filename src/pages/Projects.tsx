@@ -4,8 +4,8 @@ import '../styles/Projects.css';
 const Projects: React.FC = () => {
   const projectList = [
     {
-      title: 'My Portfolio',
-      description: 'React & TypeScriptで作成しているポートフォリオサイト',
+      title: 'このサイト',
+      description: 'React & TypeScriptで作成している簡単なポートフォリオサイト',
       // image: '/project1.png',
       link: 'https://github.com/shimapiro/my-portfolio'
     },
