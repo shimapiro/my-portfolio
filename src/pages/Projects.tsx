@@ -14,6 +14,12 @@ const Projects: React.FC = () => {
       description: 'javaのspring bootを使用して作成しました',
       // image: '/task-manager.png',
       link: 'https://github.com/shimapiro/TODO'
+    },
+    {
+      title: 'WordPressで個人的に作成した過去のサイト➀',
+      description: 'テーマやプラグインなどいじっております。漫画が好きなので漫画メイン',
+      // image: '/task-manager.png',
+      link: 'https://dokodeyomeru.jp/'
     }
   ];
 
