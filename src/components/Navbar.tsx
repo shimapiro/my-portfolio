@@ -21,10 +21,10 @@ const Navbar: React.FC = () => {
         <div className="bar"></div>
       </div>
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-        <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
-        <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
-        <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+        <li><Link to="/" onClick={toggleMenu}>ホーム</Link></li>
+        <li><Link to="/about" onClick={toggleMenu}>私について</Link></li>
+        <li><Link to="/projects" onClick={toggleMenu}>ポートフォリオ</Link></li>
+        <li><Link to="/contact" onClick={toggleMenu}>お問い合わせ</Link></li>
       </ul>
     </nav>
   );
