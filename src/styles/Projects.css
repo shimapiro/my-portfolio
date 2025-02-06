@@ -1,23 +1,75 @@
+/* 全体のスタイルをモダンに */
 .projects-container {
-    text-align: center;
-    padding: 20px;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.projects-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.project-card a {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6c5ce7;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #f0f0f0;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.project-card a:hover {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+      grid-template-columns: 1fr;
   }
   
-  .project-card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+  .projects-container h1 {
+      font-size: 2rem;
   }
-  
-  .project-card img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
+}

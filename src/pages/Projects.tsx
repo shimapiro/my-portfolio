@@ -47,10 +47,9 @@ const Projects: React.FC = () => {
       <div className="projects-grid">
         {projectList.map((project, index) => (
           <div key={index} className="project-card">
-            {/* <img src={project.image} alt={project.title} /> */}
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">ポートフォリオ</a>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">サイトへ</a>
           </div>
         ))}
       </div>
